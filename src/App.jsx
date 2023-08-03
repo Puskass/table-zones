@@ -1,9 +1,8 @@
-// App.js
 import React from 'react';
 import Zone from './components/Zone';
 
 const App = ({ zones }) => (
-  <div className="p-10 mx-auto max-w-xl"> 
+  <div className="mx-auto max-w-2xl"> 
     {zones.map((zone, i) => (
       <Zone key={i} zone={zone} />
     ))}

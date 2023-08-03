@@ -1,29 +1,22 @@
-// Grid.js
-import React from 'react';
+import React from "react";
 
 const Grid = ({ grid }) => (
-  <table className="border-collapse border border-gray-500">
-    <tbody>
-      {grid.map((row, i) => (
-        <tr key={i}>
-          {row.map((cell, j) => (
-            <td
-              key={j}
-              className={`px-4 py-2 border border-gray-500 w-20 h-20 ${
-                cell === null
-                  ? 'bg-white shadow hover:animate-ping hover:bg-slate-200 cursor-pointer'
-                  : cell !== ''
-                  ? 'bg-yellow-300 hover:bg-yellow-400'
-                  : 'hover:bg-gray-200'
-              }`}
-            >
-              {cell}
-            </td>
-          ))}
-        </tr>
-      ))}
-    </tbody>
-  </table>
+  <div className="max-w-xl grid gap-4 grid-cols-5">
+    {grid.map((row, i) => (
+      <React.Fragment key={i}>
+        {row.map((cell, j) => (
+          <div
+            className={`w-24 h-24 flex items-center justify-center border shadow-md rounded-xl hover:animate-bump ${
+              cell ? 'font-bold bg-amber-400 hover:bg-amber-500' : 'bg-white'
+            }`}
+            key={j}
+          >
+            <span>{cell}</span>
+          </div>
+        ))}
+      </React.Fragment>
+    ))}
+  </div>
 );
 
 export default Grid;

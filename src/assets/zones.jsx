@@ -1,25 +1,32 @@
-// Sample zones data.
 export const zones = [
   {
     zoneName: "Basta",
     grid: [
-      [null, "test-nad-stol1", null, null, null],
+      [null, "test1", null, null, null],
       ["test2", null, null, null, null],
       [null, null, null, "test3", null],
       [null, "test4", null, null, null],
       [null, null, null, null, "test5"],
     ],
   },
-  {
-    zoneName: "Terasa",
-    grid: [
-      ['test', "test5", 'test', 'test', 'test'],
-      ["test4", null, null, null, 'test'],
-      [null, null, null, "test3", 'test'],
-      [null, "test2", null, null, 'test'],
-      [null, null, null, null, "test1"],
-    ],
-  },
+  // {
+  //   zoneName: "Terasa",
+  //   grid: [
+  //     [null, "test5", null, null, null],
+  //     ["test4", null, null, null, null],
+  //     [null, null, null, "test3", null],
+  //     [null, "test2", null, null, null],
+  //     [null, null, null, null, null],
+  //   ],
+  // },
+  // {
+  //   zoneName: "Basta2",
+  //   grid: [
+  //     ['test', null, null, null, null],
+  //     [null, 'test', null, null, null],
+  //     [null, null, 'test', null, null],
+  //     [null, null, null, 'test', null],
+  //     [null, null, null, null, 'test'],
+  //   ],
+  // },
 ];
-
-// Render the App component with the sample zones data.
